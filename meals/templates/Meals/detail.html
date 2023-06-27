@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block body %}
+ 
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">               
+
+                    <img class="meal_img" src="{{meal_detail.image.url}}" alt="">
+                    <h2>{{meal_detail}}</h2>
+                    <p>{{meal_detail.description}} </p>
+                    <P>For:{{meal_detail.people}} People </P>
+                    <P>Preperation Time:{{meal_detail.preparation_time}} Minutes </P>
+                    <P>Price: Rs {{meal_detail.price}} </P>
+                     
+                </div>
+                 
+            </div>
+        </div>
+        <!-- Menu End -->
+ 
+
+        
+ 
+
+ 
+
+{% endblock body %}        
+  
